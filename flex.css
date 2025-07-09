@@ -1,0 +1,90 @@
+.parent{
+    display:grid;
+    grid-template-columns:auto auto auto auto ;
+    grid-gap:10px;
+    background-color:blue;
+    padding:20px;
+    color:blue;
+   
+}
+.child{
+  background-color:greenyellow;
+  font-size:20px;
+  text-align:center;
+  padding:30px 70px;
+  
+
+
+
+}
+.mother{
+    display:grid;
+    grid:auto auto auto /auto auto auto;
+    grid-gap:20px;
+    background-color:grey;
+    padding:30px;
+}
+.kid{
+    background-color:black;
+    font-size:50px;
+    text-align:center;
+    padding:20px 0px;
+    color:grey;
+}
+/*#a{
+  grid-column-start:1;
+  grid-column-end:2;
+
+}*/
+#a{
+    grid-row-start:1;
+    grid-row-end:4;
+ }
+ #d{
+  grid-column-start:2 ;
+  grid-column-end:4 ;
+  grid-row-start: 2;
+  grid-row-end:4;
+  background-color:yellow;
+ }
+ .teacher{
+    display:grid;
+    grid: auto auto/auto auto;
+    grid-gap:15px;
+    background-color:pink;
+    padding:20px;
+ }
+ .student{
+    background-color: darkblue;
+    color:pink;
+    text-align:center;
+    padding:10px 0px;
+    font-size:20px
+
+ }
+ /*#i{
+   grid-column-start:1;
+   grid-column-end:3;
+}*/
+#i{
+    grid-column-start:1;
+    grid-column-end:4 ;
+    background-color: mediumorchid;
+    
+}
+ .one{
+  display:grid;
+  
+  grid:auto auto/auto auto;
+  grid-gap:20px;
+  background-color: orangered;
+  padding:30px;
+ }
+.two{
+ background-color: turquoise;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+
+}
+
