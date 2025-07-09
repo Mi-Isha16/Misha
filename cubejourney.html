@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingoude Ramen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefefe;
+    }
+
+    .container {
+      background: #c30000;
+      color: white;
+      padding: 10px;
+      width: 100vw;
+      min-height: 100vh;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+
+    .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .but{
+      color:white;
+      background-color: #c30000;
+      font-size: x-large;
+      
+    }
+
+    .search-filter {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-filter input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .filter-icon {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .banner {
+      background-image:url("bgimg1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 30px;
+      color: black;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: xx-large;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      font-size: larger;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background: black;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: xx-large;
+    }
+    .brand-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    .brand {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+
+    
+    
+    .brand img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .brand-name {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .time {
+      color: gray;
+    }
+   
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    
+    }
+    .card-link {
+  display: block;         /* make the <a> cover the whole card */
+  max-width: 300px;       /* or use flex-basis / width:100% for fluid layouts */
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* inherit the card’s text color */
+}
+
+    
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card .price {
+      font-weight: bold;
+    }
+
+    .favorite {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    .rating {
+      background-color: #48c479;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .min{
+      text-align: end;
+      color: black;
+      font-size: medium;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">FOODEXPRESS</div>
+
+      <a href="10.html">
+  	<button class="but" >LOGIN</button>
+</a>
+<Button class="but">SIGN UP</Button>
+      <img src="food.png" alt="Profile" class="profile-img" />
+    </div>
+
+    <div class="search-filter">
+      <input type="text" placeholder="Search here..." />
+      
+    </div>
+
+    <div class="banner">
+      <div>
+        <h2>Free Delivery Order!</h2>
+        <h3>Available from 1 May-31 May 2025</h3>
+      </div>
+      <div>
+        <img src="offer.png" width="200px" height="200px">
+      </div>
+    </div>
+<marquee style="background-color:white;color: #c30000;">Available From 1 may-31 may 2025 </marquee><br><br>
+    <div class="tabs">
+      <div class="tab active">All</div>
+      <div class="tab">Biriyani</div>
+      <div class="tab">Drink</div>
+      <div class="tab">Chicken</div>
+      <div class="tab">Burger</div>
+      <div class="tab">Cake</div>
+      <div class="tab">Noodles</div>
+      <div class="tab">North Indian</div>
+      <div class="tab">Dosa</div>
+      <div class="tab">Fried Rice</div>
+      <div class="tab">Paratha</div>
+    </div>
+   
+    <h2>Top brands for you</h2>
+    <div class="brand-container">
+      <div class="brand">
+        <img src="mcd.png" alt="McDonald's">
+        <div class="brand-name">McDonald's</div>
+        <div class="time">38 min</div>
+      </div>
+      <div class="brand">
+        <img src="dom.png" alt="Domino's Pizza">
+        <div class="brand-name">Domino's Pizza</div>
+        <div class="time">28 min</div>
+      </div>
+      <div class="brand">
+        <img src="bur.png" alt="Burger King">
+        <div class="brand-name">Burger King</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="meg.png" alt="Meghana Foods">
+        <div class="brand-name">Meghana foods</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="nand del.png" alt="Nandini Deluxe">
+        <div class="brand-name">Nandinni Deluxe</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="mani.jpg" alt="Mani's Dum Biriyani">
+        <div class="brand-name">Mani's Dum Biriyani</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="cal.png" alt="Califoonia Burrito">
+        <div class="brand-name">Califoonia Burrito</div>
+        <div class="time">45min </div>
+      </div>
+      <div class="brand">
+        <img src="emp.png" alt="Empire Restaurant">
+        <div class="brand-name">Empire Restaurant</div>
+        <div class="time">50 min</div>
+      </div>
+      <div class="brand">
+        <img src="kfc.png" alt="KFC">
+        <div class="brand-name">KFC</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="tru.jpg" alt="Truffles">
+        <div class="brand-name">Truffles</div>
+        <div class="time">39 min</div>
+      </div>
+      <div class="brand">
+        <img src="nanp.png" alt="Nandana Palace">
+        <div class="brand-name">Nandana Palace</div>
+        <div class="time">39 min</div>
+      </div>
+    </div><br><br><br>
+  
+    <div class="menu-grid">
+      <a href="https://www.zomato.com/bangalore/dominos-pizza-shanti-nagar/order" class="card-link">
+      <div class="card">
+        <div class="favorite">♥</div> 
+        <img src="dominopizza.jpg" alt="Domino's Pizza" />
+        <h3>Domino's Pizza</h3>
+        <p class="price">₹200/- per person</p>
+        <p class="rating">3.7★</p>
+        <span class="min">21 min</span>
+      </div>
+      </a>
+      
+    
+       
+        <a href="https://www.zomato.com/bangalore/sharief-bhai-biryani-frazer-town-bangalore/order"  class="card-link">
+          <div class="card">
+        <div class="favorite">♥</div>
+        <img src="biriyani.jpg" alt="biriyani" />
+        <h3>Sharief Bhai Restaurant</h3>
+        <p class="price">₹400/- per person</p>
+        <p class="rating">3.9★</p>
+        <span class="min">55 min</span>
+      </div>
+    </a>
+
+      <div class="card">
+        <div class="favorite">♥</div>
+        <img src="kfcchicken.jpg" alt="KFC Chicken" />
+        <h3>KFC</h3>
+        <p class="price">₹200/- per person</p>
+        <p class="rating">4.0★</p>
+        <span class="min">45 min</span>
+      </div>
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="pizzahut.jpg" alt="Chicken Ramen" />
+      <h3>Pizza Hut</h3>
+      <p class="price">₹150/- per person</p>
+      <p class="rating">4.0★</p>
+      <span class="min">39 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="polarbear.jpg" alt="polarbear" />
+      <h3>Polar Bear</h3>
+      <p class="price">₹200/- per person</p>
+      <p class="rating">4.2★</p>
+      <span class="min">41 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="kanti.jpg" alt="Kanti Sweets" />
+      <h3>Kanti Sweets-since 1957</h3>
+      <p class="price">₹200/-</p>
+      <p class="rating">4.5★</p>
+      <span class="min">40 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="mani dum.jpg" alt="Mani's Dum Biriyani" />
+      <h3>Mani's Dum Biriyani</h3>
+      <p class="price">₹400</p>
+      <p class="rating">4.1★</p>
+      <span class="min">45 min</span>
+    </div>
+
+<div class="card">
+      <div class="favorite">♥</div>
+      <img src="thalassery.jpg" alt="thalassey Restaurant" />
+      <h3>Thalassery Restaurant</h3>
+      <p class="price">₹400/-</p>
+      <p class="rating">4.1★</p>
+      <span class="min">49 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="chinese.jpg" alt="Chinese Wok" />
+      <h3>Chinese Wok</h3>
+      <p class="price">₹3oo/-</p>
+      <p class="rating">4.0★</p>
+      <span class="min">48 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="kabab.jpg" alt="kabab majic" />
+      <h3>Kabab Majic</h3>
+      <p class="price">₹200/-</p>
+      <p class="rating">3.6★</p>
+      <span class="min">32 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+      <img src="rameswaram.jpg" alt="rameswra cafe" />
+      <h3>The Rameswaram Cafe</h3>
+      <p class="price">₹100/-</p>
+      <p class="rating">4.3★</p>
+      <span class="min">48 min</span>
+    </div>
+
+    <div class="card">
+      <div class="favorite">♥</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtxT1eerySWGYs20SEnk9Hf4ndBwfpzRoZA&s" alt="rameswra cafe" />
+      <h3>Nandini Deluxe</h3>
+      <p class="price">₹600/-</p>
+      <p class="rating">4.1★</p>
+      <span class="min">32 min</span>
+    </div>
+
+  </div>
+</div>  
+</body>
+</html>

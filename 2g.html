@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    .header {
+      background-color: #3da6f7;
+      height: 150px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: -75px auto 30px;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      flex: 1;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    button {
+      background-color: #3da6f7;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3291d7;
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .socials i {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #3da6f7;
+      cursor: pointer;
+    }
+  </style>
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="header"></div>
+
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>We will get back to you asap.</p>
+    <form>
+      <div class="form-row">
+        <input type="text" placeholder="Please enter first name..." required />
+        <input type="text" placeholder="Please enter last name..." required />
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Please enter email..." required />
+        <input type="tel" placeholder="Please enter phone number..." />
+      </div>
+      <textarea placeholder="Please enter query..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="socials">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-google"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+
+</body>
+</html>

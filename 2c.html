@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interior Design Inspiration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 15px;
+      padding: 10px;
+    }
+    .tile {
+      position: relative;
+      width: 45%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .label {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      .tile {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <center><h1 style="background-color: greenyellow;">Inspiration for home interior designs</h1></center>
+  <p>We bring you carefully-curated interior design ideas, to give your home a brand new look. Explore exclusive interior designs and trends that are every bit inspirational as they are practical.</p>
+</header>
+
+<div class="grid">
+  <div class="tile">
+    <img src="bedroom.jpg" alt="Master Bedroom">
+    <div class="label">Master Bedroom</div>
+  </div>
+  <div class="tile">
+    <img src="false ceiling.jpg" alt="False Ceiling">
+    <div class="label">False Ceiling</div>
+  </div>
+  <div class="tile">
+    <img src="kitchen.jpg" alt="Kitchen Designs">
+    <div class="label">Kitchen Designs</div>
+  </div>
+  <div class="tile">
+    <img src="wardrobe.jpg" alt="Wardrobe Designs">
+    <div class="label">Wardrobe Designs</div>
+  </div>
+  <div class="tile">
+    <img src="livspace.jpg" alt="Homes by Livspace">
+    <div class="label">Homes by Livspace</div>
+  </div>
+</div>
+
+</body>
+</html>

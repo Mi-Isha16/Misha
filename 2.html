@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bikin</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background: #03a9f4;
+      padding:10px;
+      display:flex ;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top:0px;
+      z-index: 999;
+    }
+    header img.logo {
+      position: absolute;
+      left: 20px;
+      top: 5px;
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image:url("design.jpg") ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-top: 80px;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero .buttons a {
+      text-decoration: none;
+      padding: 15px 30px;
+      margin: 0 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #03a9f4;
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: #03a9f4;
+    }
+    a:hover{
+      color: red;
+      font-size: larger;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo 1.png" class="logo"/>
+  
+  <div style="line-height: 1.2;">
+    <div style="font-weight: bold; font-size: 20px; color: white;text-align: left;padding-left: 70px;">BUTTERFLY</div>
+    <div style="font-size: 15px; color: white;text-align: left;padding-left: 70px;">Interior Designers</div>
+  </div>
+
+  <nav>
+    <a href="2a.html">Home</a>
+    <a href="2b.html">Features</a>
+    <a href="2c.html">Gallery</a>
+    <a href="2d.html">Price & Plan</a>
+    <a href="2e.html">Our Team</a>
+    <a href="2f.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>Clean & Fully Modern Design</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+    <div class="buttons">
+      <a href=https://youtu.be/OzUkvzyBttA"" class="btn-primary">Live Demo</a>
+      <a href="2g.html" class="btn-light">Get Now</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
