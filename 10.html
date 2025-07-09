@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MediTrack Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      background-color: red;
+      color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .left-panel img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+      padding-top:10px;
+    }
+
+    .left-panel p {
+      max-width: 300px;
+      font-size: 18px;
+    }
+
+    .right-panel {
+      flex: 1;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .right-panel h2 {
+      margin-bottom: 20px;
+      color: #2b3397;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4ab1c9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .login-form .forgot {
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+      font-size: 12px;
+      color: #777;
+      text-decoration: none;
+    }
+
+    .social-login {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-login p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+    .note{
+        background-color: aquamarine;
+        width: 300px;
+        height:20px;
+        text-align: center;
+        padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+        <h1>Better food for<br> more people</h1>
+      <img src="foodexp.jpg" alt="food express logo">
+      <p>We deliver healthy food that are ready to eat.Experience fast & easy online ordering on the Food Express app</p>
+    </div>
+    <div class="right-panel">
+      <h2>Log in</h2>
+      <form class="login-form">
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Log in</button>
+        <a href="#" class="forgot">Forgotten password</a>
+      </form>
+      <div class="social-login">
+        <p>or log in with</p>
+        <div class="social-icons">
+          <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png" alt="Facebook">
+          <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Google">
+          <img src="https://img.icons8.com/ios-filled/50/000000/twitter--v1.png" alt="Twitter">
+          <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="Apple">
+          
+        </div>
+        <p class="note">Note:If you have difficulty logging in,please call the office</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
