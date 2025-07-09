@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caveboy Escape</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('bg4.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    
+
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 50px 20px;
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      padding-top: 300px;
+      
+    }
+    .menu button {
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 60px;
+      font-size: 24px;
+      color: deeppink;
+      
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black;
+   
+    }
+    .link{
+      display: block;         /* make the <a> cover the whole card */
+       max-width: 300px;       /* or use flex-basis / width:100% for fluid layouts */
+      text-decoration: none;  /* remove underline */
+      color: inherit;         /* inherit the card’s text color */
+     }
+    .glossy-button{
+       background: linear-gradient(to bottom,#4cd8a7) ;
+       color:white;
+       font-size: 18px;
+       padding: 15px 30px;
+       border: none;
+       border-radius: 50px;
+       box-shadow:inset -3px -3px 8px rgba(255,255,255,0.5),0 5px 10px rgba(0,0,0,0.2)
+       cursor: pointer;
+       width: 200px;
+       transition:transform 0.2s;
+    }
+
+    .glossy-button:hover{
+      transform: scale(1.2);
+    }
+      .bottom-icons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon-btn {
+      background: #ff5722;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px #b33b10;
+      transition: transform 0.2s ease,box-shadow 0.2s ese;
+    }
+    .icon-btn:hover{
+       transform: scale(1.2);
+       box-shadow: 0 6px #b33b10;
+
+    }
+
+
+
+
+    
+  </style>
+</head>
+<body>
+ 
+
+
+  <div class="container">
+    <div class="menu">
+      <a href="https://www.1001games.com/puzzle/jungle-jewels-connect" class="link">
+      <button class="glossy-button">PLAY</button>
+     </a>
+      <a href="https://www.1001games.com/animal/the-lion-guard-protectors-of-the-pridelands" class="link">
+      <button class="glossy-button">SURVIVAL</button>
+      </a>
+      <a href="https://www.1001games.com/" class="link">
+      <button class="glossy-button">STORE</button>
+      </a>
+      <a href="https://www.1001games.com/io-games" class="link"> 
+      <button class="glossy-button">OTHER GAMES</button>
+      </a>
+    </div>
+    <div class="bottom-icons">
+    <div class="icon-btn">❤</div>
+    <div class="icon-btn">🏆</div>
+    <div class="icon-btn">📋</div>
+    <div class="icon-btn">🛒</div>
+  </div>
+
+      
+    
+  </div>
+</body>
+</html>
